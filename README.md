@@ -1,15 +1,15 @@
 # JoongShin
 주니어 스펙업 프로젝트 - 'JoongShin'
-<h1> 1. 기획 의도<br>
+<h1> 1. 기획 의도</h1> <br>
   ![002](https://github.com/exceptionError-jin/JoongShin/assets/129862445/6a3cbe13-09c6-46fc-9588-9d687f656aef)
   ![003](https://github.com/exceptionError-jin/JoongShin/assets/129862445/172cc7ec-816e-41c1-93b3-c87f5e9f2965)
   경력있는 신입을 뽑는 추세가 높아져 취업이 힘들어지는 신입(주니어)들을 위해 경력을 쌓아 니즈를 충족하자는 목적으로 만들게 되었습니다.
   
-<h1> 2. 기대 효과<br>
+<h1> 2. 기대 효과</h1> <br>
   그에 따른 기대효과로는 주니어들은 경력을 쌓아 니즈를 충족할 수 있게 되고,
   소비자들은 싼 가격으로 서비스를 받아 니즈를 충족할 수 있게 되는 1석2조의 효과를 볼 수 있습니다.
   
-<h1> 3. 프로젝트 사용 툴<br>
+<h1> 3. 프로젝트 사용 툴</h1> <br>
 - Java
 - Java Script
 - tomcat
@@ -25,10 +25,10 @@
 - JDK 11.0.15
 - SMTP Gmail API
   
-<h1> 4. ERD<br>
+<h1> 4. ERD</h1> <br>
   <img width="782" alt="joongshin_erd" src="https://github.com/exceptionError-jin/JoongShin/assets/129862445/7af59c2b-66e2-4202-9419-5eca041b6256">
 
-<h1> 5. 담당 업무<br>
+<h1> 5. 담당 업무</h1> <br>
   5-1 퍼블리싱
   <img width="981" alt="스크린샷 2023-06-01 오후 4 33 13" src="https://github.com/exceptionError-jin/JoongShin/assets/129862445/96224709-43d6-42b1-97e4-e08b8318a7bd">
   
@@ -65,7 +65,7 @@
   ▶ 메인페이지
   게시글 목록들 보여주기
   
-<h1> 6. 느낀점<br>
+<h1> 6. 느낀점</h1> <br>
 6-1. 어려웠던 부분
 📌MVC 단계를 순차적으로 진행하는 것이 어려웠다.
 ✔ 단계가 익숙하지 않아 mapper부터 controller까지 진행하는 것이 어려웠지만, 단계별로 완성될 때마다 단위 테스트 등을 통해 진행하여 순서를 익혔다.
