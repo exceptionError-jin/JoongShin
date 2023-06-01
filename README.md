@@ -10,23 +10,23 @@
   경력있는 신입을 뽑는 추세가 높아져 취업이 힘들어지는 신입(주니어)들을 위해 경력을 쌓아 니즈를 충족하자는 목적으로 만들게 되었습니다.
   
 <h1> 2. 기대 효과</h1> <br>
-  그에 따른 기대효과로는 주니어들은 경력을 쌓아 니즈를 충족할 수 있게 되고,
+  그에 따른 기대효과로는 주니어들은 경력을 쌓아 니즈를 충족할 수 있게 되고,<br>
   소비자들은 싼 가격으로 서비스를 받아 니즈를 충족할 수 있게 되는 1석2조의 효과를 볼 수 있습니다.
   
 <h1> 3. 프로젝트 사용 툴</h1> <br>
-- Java
-- Java Script
-- tomcat
-- jQuery
-- MyBatis
-- jsp
-- MySQL
-- Eclipse
-- DBeaver
-- git, github
-- JSON
-- Ajax
-- JDK 11.0.15
+- Java<br>
+- Java Script<br>
+- tomcat<br>
+- jQuery<br>
+- MyBatis<br>
+- jsp<br>
+- MySQL<br>
+- Eclipse<br>
+- DBeaver<br>
+- git, github<br>
+- JSON<br>
+- Ajax<br>
+- JDK 11.0.15<br>
 - SMTP Gmail API
   
 <h1> 4. ERD</h1> <br>
@@ -34,7 +34,7 @@
 
 <h1> 5. 담당 업무</h1> <br>
   5-1 퍼블리싱
-  <img width="981" alt="스크린샷 2023-06-01 오후 4 33 13" src="https://github.com/exceptionError-jin/JoongShin/assets/129862445/96224709-43d6-42b1-97e4-e08b8318a7bd">
+  <img width="981" src="https://github.com/exceptionError-jin/JoongShin/assets/129862445/96224709-43d6-42b1-97e4-e08b8318a7bd">
   
   ▶ 이용자 마이페이지
     주니어 마이페이지
