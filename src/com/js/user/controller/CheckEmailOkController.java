@@ -20,9 +20,13 @@ public class CheckEmailOkController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		resp.setContentType("text/html;charset=utf-8");
+		// 이메일 파라미터 가져오기
 		String userEmail = req.getParameter("userEmail");
+		// UserDAO 객체 생성
 		UserDAO userDAO = new UserDAO();
+		// 이메일 중복 확인
 		boolean check = userDAO.selectEmail(userEmail) == null;
+		// 결과를 담을 JSON 객체 생성
 		JSONObject result = new JSONObject();
 		
 		try {

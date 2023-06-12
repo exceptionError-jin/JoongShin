@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>비밀번호 찾기</title>
+<title>비밀번호 재설정</title>
 </head>
 <link href="../../static/image/logo/logo.png" rel="shortcut icon" type="image/x-icon">
 
@@ -35,10 +35,10 @@
         </div>
         <section id="join-container">
                 <h2 id="title">
-                    아이디 재설정
+                    비밀번호 재설정
                 </h2>
             
-	<h1>비밀번호 찾기</h1>
+	<h1>이메일</h1>
 	<form action="/FindPassword.board" method="post">	
 		<div class="info">
 			<div class="info-container">

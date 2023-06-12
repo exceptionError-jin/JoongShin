@@ -40,15 +40,12 @@ public class BoardFrontController extends HttpServlet {
 			result = new comuDetailOkController().execute(req, resp);
 
 		} else if (target.equals("comulistOk")) {
-			System.out.println("�씪諛섏쑀��");
 			result = new comuListOkController().execute(req, resp);
 
 		} else if (target.equals("comujunilistOk")) {
-			System.out.println("二쇰땲�뼱�쑀��");
 			result = new comujuniListOkController().execute(req, resp);
 			
 		} else if (target.equals("FindPassword")) {
-			System.out.println("�씠硫붿씪 蹂대궡湲�");
 			result = new FindPasswordController().execute(req, resp);
 			
 		} else if (target.equals("findPasswordOk2")) {

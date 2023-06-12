@@ -27,9 +27,9 @@ public class UserFrontController extends HttpServlet {
 		System.out.println(target);
 		Result result = null;
 		
+		//대상에 따라 적절한 컨트롤러 결정
 		if(target.equals("checkEmailOk")) {
 			result = new CheckEmailOkController().execute(req, resp);
-			
 		} else if(target.equals("join")){
 			result = new Result();
 			result.setPath("templates/makepage-hsw/join.jsp");

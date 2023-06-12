@@ -26,6 +26,7 @@ public class LoginOkController implements Action {
 	    Result result = new Result();
 	    result.setRedirect(true);
 
+	    // userEmail이 null인 경우, 쿠키를 검사하여 저장된 이메일과 비밀번호를 사용
 	    if(userEmail == null) {
 	        if(req.getHeader("Cookie") != null){
 	            Cookie[] cookies = req.getCookies();
@@ -41,6 +42,7 @@ public class LoginOkController implements Action {
 	        }
 	    }
 
+	    // 이메일과 비밀번호를 사용하여 로그인
 	    userId = userDAO.login(userEmail, userPassword);
 	    System.out.println(userId);
 	    if(userId == null) {

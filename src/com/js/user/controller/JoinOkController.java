@@ -19,13 +19,14 @@ public class JoinOkController implements Action{
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 	
+		// 사용자가 입력한 회원가입 정보를 UserVO에 저장
 		userVO.setUserName(req.getParameter("userName"));
 		userVO.setUserPassword(req.getParameter("userPassword"));
 		userVO.setUserEmail(req.getParameter("userEmail"));
 		userVO.setUserAddress(req.getParameter("userAddress"));
 		userVO.setUserPhonenumber(req.getParameter("userPhonenumber"));
 	
-		
+		//UserVO를 DB에 저장
 		userDAO.insert(userVO);
 		
 		result.setRedirect(true);

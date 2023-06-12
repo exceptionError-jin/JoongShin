@@ -1,4 +1,4 @@
-/*유저 기본 속성 정보 창고*/
+/*일반 유저 DTO*/
 package com.js.juniorUser.domain;
 
 public class JuniorUserDTO2 {

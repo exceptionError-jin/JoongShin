@@ -23,30 +23,31 @@ public class JuniorUserFrontController extends HttpServlet {
 		String target = req.getRequestURI().replace(req.getContextPath() + "/", "").split("\\.")[0];
 		Result result = null;
 		
+		//대상에 따라 적절한 컨트롤러 결정
 		if(target.equals("checkEmailOk")) {
-			System.out.println("1");
+			System.out.println("checkEmailOk");
 			result = new CheckEmailOkController().execute(req, resp);
 		} 
 		else if(target.equals("gosuJoin")){
-			System.out.println("2");
+			System.out.println("gosuJoin");
 			result = new Result();
 			result.setPath("templates/makepage-hsw/gosuJoin.jsp");
 			
 		}
 		else if(target.equals("joinOk")){
-			System.out.println("3");
+			System.out.println("joinOk");
 			result = new JuniorJoinOkController().execute(req, resp);
 			
 		} else if(target.equals("gosuLogin")){
-			System.out.println("4");
+			System.out.println("gosuLogin");
 			result = new JuniorLoginController().execute(req, resp);
 			
 		} else if(target.equals("loginOk")) {
-			System.out.println("5");
+			System.out.println("loginOk");
 			result = new JuniorLoginOkController().execute(req, resp);
 			
 		} else if(target.equals("logout")) {
-			System.out.println("6");
+			System.out.println("logout");
 			result = new JuniorLogoutController().execute(req, resp);
 		}
 		

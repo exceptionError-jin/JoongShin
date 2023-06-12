@@ -5,7 +5,7 @@ Java 객체의 메서드와 연결하여 데이터베이스와 상호작용할 �
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- SQL 쿼리를 포함하고 있으며, 이를 Java 객체의 메서드와 연결하여 데이터베이스와 상호작용할 수 있도록 돕는다.  -->
 <mapper namespace="juniorUser">
-
+<!-- 주니어 유저정보랑 일반유저 정보를 합쳐서 하나의 주니어 유저로 만듦 -->
   <insert id="insertUser">
     INSERT INTO tbl_user (user_email, user_password, user_name, user_address, user_phonenumber) 
     VALUES (#{userEmail}, #{userPassword}, #{userName}, #{userAddress}, #{userPhonenumber})

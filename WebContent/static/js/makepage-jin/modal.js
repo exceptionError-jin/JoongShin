@@ -1,3 +1,4 @@
+/* 모달창 */
 let modalCheck;
 function showWarnModal(modalMessage){
     modalCheck = false;
@@ -7,6 +8,7 @@ function showWarnModal(modalMessage){
     setTimeout(function(){modalCheck = true;}, 500);
 }
 
+/* 모달창 닫기 */
 $("div.modal").on("click", function(){
     if(modalCheck){
         $("div.warn-modal").css("animation", "popDown 0.5s");

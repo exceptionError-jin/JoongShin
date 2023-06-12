@@ -18,8 +18,11 @@ public class LogoutController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		Result result = new Result();
+		
+		// 세션 무효화하여 로그아웃 처리
 		req.getSession().invalidate();
 		
+		// 쿠키 값 제거
 		if(req.getHeader("Cookie") != null){
 			Cookie[] cookies = req.getCookies();
 			for(Cookie cookie: cookies){

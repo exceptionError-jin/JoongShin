@@ -1,9 +1,12 @@
+/* 회원가입 유효성 검사 */
+
 $("div.join").hide();
 let step = 1;
 
-// term
+// 필수 약관 체크
 const $requiredChecks = $("input[type='checkbox'].required");
 
+// 필수 약관 동의 여부 확인 후 다음 단계로 이동
 function goInfo(){
     let check = false;
     $requiredChecks.each(function(i, requiredCheck){
@@ -44,6 +47,7 @@ $infoInputs.eq(1).on("focus", function(){
     $(this).val($(this).val().replaceAll("-", ""));
 });
 
+// 정보 입력란에서 포커스가 벗어났을 때 실행
 $infoInputs.on("blur", function(){
     let i = $infoInputs.index($(this));
     let value = $(this).val();
@@ -85,6 +89,7 @@ $infoInputs.on("blur", function(){
     showHelp($(this), "pass.png");
 });
 
+// 도움말 표시 함수
 function showHelp($input, fileName){
     $input.next().attr("src", "/static/images/" + fileName);
 
@@ -199,10 +204,10 @@ $("select.email").on("change", function(){
     }
     $("div.email-last input").prop("readonly", true);
 
-	/*이메일 합치기*/
+	//이메일 합치기
 	$("input[name='userEmail']").val($("div.email-first input").val() + '@' + $("div.email-last input").val())
 	
-	/*이메일 중복검사*/
+	//이메일 중복검사
 	$.ajax({
 		url: "checkEmailOk.user",
 		type: "post",
@@ -230,7 +235,7 @@ $("select.email").on("change", function(){
 
  
 
-
+// 가입 버튼 클릭 시 실행
 function send(){
     $joinInputs.trigger("blur");
     if(joinCheckAll.filter(check => check).length != $joinInputs.length){
@@ -239,8 +244,6 @@ function send(){
         return;
     }
 
+	// 회원가입 폼 제출
     document.join.submit();
 }
-
-
-
